@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>A01274966_Lab1</title>
+  </head>
+  <body>
+    <header>
+      <h3>Julio César Gómez Gonzalez A01274966</h3>
+      <h1>
+        Laboratorio 1: Introducción a las aplicaciones web, HTML5 y ciclo de
+        vida de los sistemas de información
+      </h1>
+    </header>
+    <main>
+      <section>
+        <h2>Sobre mí</h2>
+        <p>
+          Me gustan mucho los videojuegos, la comida, ver series y pasar el
+          tiempo con mis amigos. En cuanto mi experiencia, tengo conociemientos
+          en C++, Python y tengo algunos conociemientos en desarrollo de
+          videjuegos en unity con C#.
+        </p>
+      </section>
+      <section>
+        <div>
+          <h2>Preguntas a responder</h2>
+        </div>
+        <div>
+          <p><strong>
+            1. ¿Cuál es la diferencia entre Internet y la World Wide Web?
+
+          </p></strong>
+          <p>
+            La Web, también conocida como World Wide Web (WWW) es una recopilación de información a la que se accede a través de Internet.
+          </p>
+        </div>
+        <div>
+          <p><strong>
+            2. ¿Cuáles son las partes de un URL?
+          </strong></p> 
+          <p>
+            Protocolo HTTPS, subdominio, dominio, TLD, ruta, parámetro, etiqueta.
+          </p>
+        </div>
+        <div>
+          <p><strong>
+            3. ¿Cuál es el propósito de los métodos HTTP: GET, HEAD, POST, PUT, PATCH, DELETE?
+          </strong></p>
+          <p>
+            <li>GET: Solicita la reprecentación de un recurso especfíco.</li>
+            <li>HEAD: Solicita una respuesta similar a la del GET pero sin el cuerpo.</li>
+            <li>POST:Envia una entidad a un recurso en específico.</li>
+            <li>PUT: Reemplaza las represntaciones del recurso de destino.</li>
+            <li>PATCH: Modifica parcialmente un recurso.</li>
+            <li>DELETE: Elimina un recurso en específico.</li>
+          </p>
+        </div>
+        <div>
+          <p><strong>
+            4. ¿Qué método HTTP se debe utilizar al enviar un formulario HTML, por ejemplo cuando ingresas tu usuario y contraseña en algún sitio? ¿Por qué?
+          </strong></p>
+          <p>
+            Utilizamos el metodo GET y el metodo POST ya que solicitaremos al servidor que revise y regrese un recurso esfecífico.
+          </p>
+        </div>
+        <div>
+          <p><strong>
+            5. ¿Qué método HTTP se utiliza cuando a través de un navegador web se accede a una página a través de un URL?
+          </strong></p>
+          <p>
+            Mediante el metodo GET.
+          </p>
+        </div>
+        <div>
+          <p><strong>
+            6. Un servidor web devuelve una respuesta HTTP con código 200. ¿Qué significa esto? ¿Ocurrió algún error?
+          </strong></p>
+          <p>
+            Indica que se ha completado satisfactoriamente una solicitud HTTP específica
+          </p>
+        </div>
+        <div>
+          <p><strong>
+            7. ¿Es responsabilidad del desarrollador corregir un sitio web si un usuario reporta que intentó acceder al sitio y se encontró con un error 404? ¿Por qué?
+          </strong></p>
+          <p>
+            El error 404 indica que el servidor no ha encontrado la información de la pagina web solicitada, por lo tanto no es responsabilidad del desarrollador.
+          </p>
+        </div>
+        <div>
+          <p><strong>
+            8. ¿Es responsabilidad del desarrollador corregir un sitio web si un usuario reporta que intentó acceder al sitio y se encontró con un error 500? ¿Por qué?
+          </strong></p>
+          <p>
+            Este error, a diferencia del error 404 si es responsabilidad del desarrollador. Ya que el servidor encontro una condicion que impide completar la petición.
+          </p>
+        </div>
+        <div>
+          <p><strong>
+            9. ¿Qué significa que un atributo HTML5 esté depreciado o desaprobado (deprecated)? Menciona algunos elementos de HTML 4 que en HTML5 estén desaprobados.
+          </strong></p>
+          <p>
+            Un elemento o atributo desaprobado es aquel que ha quedado anticuado por la presencia de estructuras nuevas.
+          </p>
+        </div>
+        <div>
+          <p><strong>
+            10. ¿Cuáles son las diferencias principales entre HTML 4 y HTML5?
+          </strong></p>
+          <table border="1">
+            <tr>
+              <th>HTML4</th>
+              <th>HTML5</th>
+            </tr>
+            <tr>
+              <td>No soporta la ejecucion de audio y video sin el uso de flash player.</td>
+              <td>Soporta audio y video con el uso de las etiquetas &ltaudio&gt y &ltvideo&gt.</td>
+            </tr>
+            <tr>
+              <td>Utiliza cookies para almacenar datos temporales.</td>
+              <td>Utiliza bases de dato SQL y el cache de la aplicacion para almacenar datos sin conexion.</td>
+            </tr>
+            <tr>
+              <td>No permite la ejecucion de JavaScript en el navegador.</td>
+              <td>Permite la ejecucion de JavaScript en segundo plano. Esto es posible debido a el JS Web worker API en HTML5.</td>
+            </tr>
+            <tr>
+              <td>No soporta una sintaxis incorrecta.</td>
+              <td>Es capaz de soportar una sintaxis incorrecta.</td>
+            </tr>
+          </table>
+        </div>
+        <div>
+          <p><strong>
+            11. ¿Qué componentes de estructura y estilo tiene una tabla?
+          </strong></p>
+          <p>
+            <li>&lttable&gt: Se emplea para definir tablas de datos</li>
+            <li>&lttr&gt: Se emplea para definir cada fila de las tablas de datos</li>
+            <li>&lttd&gt: Se emplea para definir cada una de las celdas que forman las filas de una tabla, es decir, las columnas de la tabla</li>
+            <li>&ltth&gt: Se emplea para definir las celdas que son cabecera de una fila o de una columna de la tabla</li>
+          </p>
+        </div>
+        <div>
+          <p><strong>
+            12. ¿Cuáles son los principales controles de una forma HTML5?
+          </strong></p>
+          <p>
+            Los principales controles de una forma son: &ltform&gt, &ltfieldset&gt, &ltlegend&gt, &lttextarea&gt, &ltlabel&gt, &ltbutton&gt e &ltinput&gt
+          </p>
+        </div>
+        <div>
+          <p><strong>
+            13. ¿Qué tanto soporte HTML5 tiene el navegador que utilizas?
+          </strong></p>
+          <p>
+            El navegador que utilizo es Google Chrome y este soporta 476 puntos de 555.
+          </p>
+        </div>
+        <div>
+          <p><strong>
+            14. Sobre el ciclo de vida y desarrollo de los sistemas de información:
+          </strong></p>
+          <p>
+            ¿Cuál es el ciclo de vida de los sistemas de información?
+            <p>El ciclo de vida de los sistemas de información cuenta con 5 fases:</p>
+            <ol>
+              <li>Planificación</li>
+              <li>Análisis de requerimientos</li>
+              <li>Diseño</li>
+              <li>Implementacion y ejecucion</li>
+              <li>Operaciones y mantenimiento.</li>
+            </ol>
+            <p>
+              ¿Cuál es el ciclo de desarrollo de sistemas de información?
+              <p>El ciclo de desarrollo de sistemas de información cuenta con 7 fases:</p>
+              <ol>
+                <li>Planificación del concepto</li>
+                <li>Definición de requisitos</li>
+                <li>Diseño</li>
+                <li>Fase de desarrollo y pruebas </li>
+                <li>Puesta en marcha</li>
+                <li>Operaciones y mantenimientos</li>
+                <li>Disposición </li>
+              </ol>
+            </p>
+          </p>
+        </div>
+      </section>
+      <section>
+        <h2>Referencias:</h2>
+        <ul>
+          <li>Comunicatefacil. (2021). Diferencias Entre world Wide web e Internet. Retrieved February 10, 2021, from <a href="https://www.comunicatefacil.com/diferencias-world-wide-web-internet/">https://www.comunicatefacil.com/diferencias-world-wide-web-internet/</a></li>
+          <li>MDN Web Docs. (2021). Métodos de petición HTTP. Retrieved February 10, 2021, from <a href="https://developer.mozilla.org/es/docs/Web/HTTP/Methods">https://developer.mozilla.org/es/docs/Web/HTTP/Methods</a></li>
+          <li>MDN Web Docs. (2021). 500 Error Interno del Servidor. Retrieved February 10, 2021, from <a href="https://developer.mozilla.org/es/docs/Web/HTTP/Status/500">https://developer.mozilla.org/es/docs/Web/HTTP/Status/500</a></li>
+          <li>MDN Web Docs. (2021). 200 OK. Retrieved February 10, 2021, from <a href="https://developer.mozilla.org/es/docs/Web/HTTP/Status/200">https://developer.mozilla.org/es/docs/Web/HTTP/Status/200</a></li>
+          <li>S.A. (2021). Requisitos y recomendaciones. Retrieved February 10, 2021, from <a href="http://html.conclase.net/w3c/html401-es/conform.html">http://html.conclase.net/w3c/html401-es/conform.html</a></li>
+          <li>GeekForGeeks. (2018). Difference between HTML and HTML5. Retrieved February 10, 2021, from <a href="https://www.geeksforgeeks.org/difference-between-html-and-html5/">https://www.geeksforgeeks.org/difference-between-html-and-html5/</a></li>
+          <li>uniwebsidad. (2021). Tablas básicas. Retrieved February 10, 2021, form <a href="https://uniwebsidad.com/libros/xhtml/capitulo-7/tablas-basicas">https://uniwebsidad.com/libros/xhtml/capitulo-7/tablas-basicas</a></li>
+          <li>MDN Web Docs. (2021). Controles de formularios originales. Retrived February 10, 2021, from <a href="https://developer.mozilla.org/es/docs/Learn/HTML/Forms/The_native_form_widgets">https://developer.mozilla.org/es/docs/Learn/HTML/Forms/The_native_form_widgets</a></li>
+        </ul>
+      </section>
+    </main>
+    <footer>
+      Creado con Visual Studio Code, <a href="https://code.visualstudio.com/">https://code.visualstudio.com/</a>
+    </footer>
+  </body>
+</html>
