@@ -17,7 +17,6 @@ function cuadrados_cubos(){
     document.getElementById("regresar").onclick = function(){reWrite()};
 }
 
-
 function suma_aleatoria(){
     document.write("<h2>Suma Aleatoria</h2>")
      
@@ -147,7 +146,6 @@ function sumar_fracciones(fracciona, fraccionb) {
     document.write('<br><br><button id="regresar"> Regresar </button>');
     document.getElementById("regresar").onclick = function(){reWrite()};
 }
-
 
 function reWrite(){
     // Re-write the webpage
