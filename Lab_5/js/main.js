@@ -63,7 +63,7 @@ function ventaProductos(){
     const iva = 0.16;
     let total;
 
-    const precioVac = 999999999;
+    const precioVac = 999999;
     const precioChe = 20;
     const precioMon = 100;
     
@@ -73,6 +73,7 @@ function ventaProductos(){
 
     document.write("<h2>Lista de productos</h2>")
     total = ((precioVac*cantVac+precioChe*cantChe+precioMon*cantMon)*iva);
+    total = (total + (precioVac*cantVac+precioChe*cantChe+precioMon*cantMon));
 
     if(cantVac>0){
         document.write("<br><strong>Vacuna contra COVID-19 marca Pfizer: </strong>"+ cantVac);
