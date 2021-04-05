@@ -1,0 +1,31 @@
+{
+  "name": "lab_12",
+  "version": "1.0.0",
+  "description": "Laboratorio 12: HTML Dinámico",
+  "main": "main.js",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "ejs": "^3.1.6",
+    "express": "^4.17.1",
+    "nodemon": "^2.0.7"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon main.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/A01274966/TC2005B_Labs.git"
+  },
+  "keywords": [
+    "html",
+    "dinamico"
+  ],
+  "author": "Julio César Gómez González",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/A01274966/TC2005B_Labs/issues"
+  },
+  "homepage": "https://github.com/A01274966/TC2005B_Labs#readme"
+}

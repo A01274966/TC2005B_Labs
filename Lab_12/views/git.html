@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>A01274966_Lab6</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-dark bg-dark">
+        <div class="container">
+          <a class="navbar-brand" href="#top">Laboratorio 6</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" href="#contraseña">Validar contraseña</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#venta">Venta en línea</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#preguntas">Preguntas a responder</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#referencias">Referencias</a>
+              </li>
+            </ul>
+        </div>
+      </nav>
+    </header>
+
+    <section class="top">
+      <div class="container">
+        <h4>Julio César Gómez Gonzalez A01274966</h4>
+        <h1>Lab 6: Frameworks de estilo</h1>
+      </div>
+    </section>
+
+    <main class="container">
+      <section id="contraseña">
+        <br />
+        <div><h2>Validar contraseña</h2></div>
+        <div>
+          <ul>
+            <li>La contraseña debe tener minimo 6 caracteres</li>
+            <li>La contraseña debe tener un numero</li>
+            <li>La contraseña no debe tener espacios</li>
+            <li>Las contraseñas deben coincidir</li>
+          </ul>
+          <form onsubmit="validarContrasena()">
+            <label for="passwd">Contraseña</label> <br />
+            <input
+              id="pwd1"
+              type="password"
+              placeholder="Ingresa tu contraseña"
+            />
+            <br />
+            <br /><label for="passwd">Confirmar contraseña</label>
+            <br />
+            <input
+              id="pwd2"
+              type="password"
+              placeholder="Confirma tu contraseña"
+            /><br /><br />
+            <input
+              type="submit"
+              class="btn btn-dark"
+              value="Submit"
+            />
+          </form>
+        </div>
+      </section>
+      <section id="venta">
+        <br />
+        <div><h2>Venta en línea</h2></div>
+        <form onsubmit="ventaProductos()">
+          <div>
+            <h3>Vacuna contra COVID-19 marca Pfizer (Maximo 1 por persona)</h3>
+            <p>$999,999 MXN</p>
+            <br />
+            <img
+              src="https://www.centerwatch.com/ext/resources/images/editorial/VaccinewithNeedle-360x240.png"
+            />
+            <br /><br />
+            <label for="vacuna">Cantidad:</label>
+            <input
+              type="number"
+              id="vacuna"
+              placeholder="Cantidad de productos"
+              min="0"
+              max="1"
+            />
+          </div>
+          <div>
+            <h3>Cheto (Indiviual)</h3>
+            <p>$20 MXN</p>
+            <br />
+            <img
+              src="https://www.seekpng.com/png/full/95-957585_am-the-wattypassly-cheeto-cheetos-png-cheeto-png.png"
+            />
+            <br /><br />
+            <label for="cheto">Cantidad:</label>
+            <input
+              type="number"
+              id="cheto"
+              placeholder="Cantidad de productos"
+              min="0"
+              max="99"
+            />
+          </div>
+          <div>
+            <h3>Moneda de 10 pesos brillosa</h3>
+            <p>$100 MXN</p>
+            <br />
+            <img
+              src="https://http2.mlstatic.com/D_NQ_NP_684851-MLM43323586680_082020-O.jpg"
+            />
+            <br /><br />
+            <label for="moneda">Cantidad:</label>
+            <input
+              type="number"
+              id="moneda"
+              placeholder="Cantidad de productos"
+              min="0"
+              max="99"
+            />
+          </div>
+          <br />
+          <input type="submit" class="btn btn-dark" value="Submit" />
+        </form>
+      </section>
+      <br />
+      <section id="preguntas">
+        <div>
+          <h2>Preguntas a responder</h2>
+        </div>
+        <div>
+          <p><strong> Describe Material design </strong></p>
+          <p>
+            Material design es un lenguaje de diseño creado por Google en 2014
+            que permite a los equipos desarrollar experiencias de alta calidad
+            par Android, iOS, Flutter y web. Este sistema rapidamente reemplazo
+            a Holo en la actualización de Android Lolipop y este filosofia se
+            aplico de igualmanera a todos los productos de google tales como:
+            Google Docs, Sheet, Slides, Search, Caldendar, Gmail, etc. <br />
+            Los componentes de Material estan basados en bloques que poco a poco
+            construiran una interfaz de usuario, esta tiene implementada
+            sistemas de estados para comunicacion tales como: seleccion,
+            activacion, error, presionar, arrastrar, etc.
+          </p>
+        </div>
+      </section>
+      <section id="referencias">
+        <h2>Referencias:</h2>
+        <ul>
+          <li>
+            LíneadeCódigo. (2009). Validar password con JavaScript. Retrieved
+            February 16, 2021, from
+            <a
+              href="http://lineadecodigo.com/javascript/validar-password-con-javascript/"
+              >http://lineadecodigo.com/javascript/validar-password-con-javascript/</a
+            >
+          </li>
+        </ul>
+      </section>
+    </main>
+    <footer class="bg-dark text-white py-4">
+      <div class="container">
+        © 2021 Copyright (No se que poner aqui) <br>
+        Generación TC2005B Construcción de software
+      </div>
+
+    </footer>
+  </body>
+  <script type="text/javascript" src="/js/lab6.js"></script>
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
+    crossorigin="anonymous"
+  ></script>
+</html>

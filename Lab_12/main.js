@@ -1,5 +1,6 @@
 const express = require('express');
 const bodyParser = require('body-parser');
+const path = require('path');
 const app = express();
 const archivo = require('./routes/archivo');
 const rutas = require('./routes/rutas');
@@ -8,6 +9,8 @@ app.use(bodyParser.urlencoded({ extended: false }))
 
 app.use('/archivo',archivo);
 app.use('/rutas', rutas);
+
+app.use(express.static(path.join(__dirname, 'public')));
 
 app.get( '/', (request, response, next) => {
     let html = '<h3>Julio Cesar Gomez Gonzalez A01274966</h3>';
@@ -24,6 +27,10 @@ app.get( '/', (request, response, next) => {
                 ';
     
     response.send(html);
+});
+
+app.get('/git',(request, response, next) => {
+    response.sendFile(path.join(__dirname, 'views', 'git.html'));
 });
 
 app.use( (request, response, next) => {
