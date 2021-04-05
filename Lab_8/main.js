@@ -29,7 +29,6 @@ console.log(text("Hola Mundo"));
 console.log(max(arreglo));
 
 let file;
-let x;
 const fs = require('fs');
 
 'use strict';
