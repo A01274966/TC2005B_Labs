@@ -2,35 +2,28 @@ const express = require('express');
 const bodyParser = require('body-parser');
 const path = require('path');
 const app = express();
-const archivo = require('./routes/archivo');
-const rutas = require('./routes/rutas');
 
 app.use(bodyParser.urlencoded({ extended: false }))
 
-app.use('/archivo',archivo);
-app.use('/rutas', rutas);
+app.set('view engine', 'ejs');
+app.set('views', 'views');
 
 app.use(express.static(path.join(__dirname, 'public')));
 
-app.get( '/', (request, response, next) => {
-    let html = '<h3>Julio Cesar Gomez Gonzalez A01274966</h3>';
-    html += '<h1>Lab 11: Express</h1>'
-    html += '<h2>Rutas Disponibles:</h2>\
-                <ul>\
-                <li><a href="/">Homepage</a></li>\
-                <li><a href="/rutas/1">Ruta 1</a></li>\
-                <li><a href="/rutas/2">Ruta 2</a></li>\
-                <li><a href="/rutas/3">Ruta 3</a></li>\
-                <li><a href="/rutas/4">Ruta 4</a></li>\
-                <li><a href="/archivo/agregar">Agregar Archivo</a></li>\
-                </ul>\
-                ';
-    
-    response.send(html);
+app.get('/ruta1',(request, response, next) => {
+    response.render('ruta1');
 });
 
-app.get('/git',(request, response, next) => {
-    response.sendFile(path.join(__dirname, 'views', 'git.html'));
+app.get('/ruta2',(request, response, next) => {
+    response.render('ruta2');
+});
+
+app.get('/agregararchivo',(request, response, next) => {
+    response.render('agregararchivo');
+});
+
+app.use( '/', (request, response, next) => { 
+    response.render('home');
 });
 
 app.use( (request, response, next) => {
