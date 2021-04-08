@@ -1,0 +1,14 @@
+.navbar {
+  margin-bottom: 0;
+  background: #2c2c32;
+}
+
+.top {
+  background: #428bca;
+  padding: 20px 0;
+  color: #fff;
+}
+
+a {
+  color: #428bca;
+}

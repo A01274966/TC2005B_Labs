@@ -1,0 +1,131 @@
+<%- include('includes/header.ejs') -%>
+
+<section class="top">
+  <div class="container">
+    <h4>Julio César Gómez Gonzaleza A01274966</h4>
+    <h1>Lab 12: HTML Dinámico</h1>
+  </div>
+</section>
+
+<main class="container">
+  <section id="contraseña">
+    <br />
+    <div><h2>Validar contraseña</h2></div>
+    <div>
+      <ul>
+        <li>La contraseña debe tener minimo 6 caracteres</li>
+        <li>La contraseña debe tener un numero</li>
+        <li>La contraseña no debe tener espacios</li>
+        <li>Las contraseñas deben coincidir</li>
+      </ul>
+      <form onsubmit="validarContrasena()">
+        <label for="passwd">Contraseña</label> <br />
+        <input id="pwd1" type="password" placeholder="Ingresa tu contraseña" />
+        <br />
+        <br /><label for="passwd">Confirmar contraseña</label>
+        <br />
+        <input
+          id="pwd2"
+          type="password"
+          placeholder="Confirma tu contraseña"
+        /><br /><br />
+        <input type="submit" class="btn btn-dark" value="Submit" />
+      </form>
+    </div>
+  </section>
+  <section id="venta">
+    <br />
+    <div><h2>Venta en línea</h2></div>
+    <form onsubmit="ventaProductos()">
+      <div>
+        <h3>Vacuna contra COVID-19 marca Pfizer (Maximo 1 por persona)</h3>
+        <p>$999,999 MXN</p>
+        <br />
+        <img
+          src="https://www.centerwatch.com/ext/resources/images/editorial/VaccinewithNeedle-360x240.png"
+        />
+        <br /><br />
+        <label for="vacuna">Cantidad:</label>
+        <input
+          type="number"
+          id="vacuna"
+          placeholder="Cantidad de productos"
+          min="0"
+          max="1"
+        />
+      </div>
+      <div>
+        <h3>Cheto (Indiviual)</h3>
+        <p>$20 MXN</p>
+        <br />
+        <img
+          src="https://www.seekpng.com/png/full/95-957585_am-the-wattypassly-cheeto-cheetos-png-cheeto-png.png"
+        />
+        <br /><br />
+        <label for="cheto">Cantidad:</label>
+        <input
+          type="number"
+          id="cheto"
+          placeholder="Cantidad de productos"
+          min="0"
+          max="99"
+        />
+      </div>
+      <div>
+        <h3>Moneda de 10 pesos brillosa</h3>
+        <p>$100 MXN</p>
+        <br />
+        <img
+          src="https://http2.mlstatic.com/D_NQ_NP_684851-MLM43323586680_082020-O.jpg"
+        />
+        <br /><br />
+        <label for="moneda">Cantidad:</label>
+        <input
+          type="number"
+          id="moneda"
+          placeholder="Cantidad de productos"
+          min="0"
+          max="99"
+        />
+      </div>
+      <br />
+      <input type="submit" class="btn btn-dark" value="Submit" />
+    </form>
+  </section>
+  <br />
+  <section id="preguntas">
+    <div>
+      <h2>Preguntas a responder</h2>
+    </div>
+    <div>
+      <p><strong> Describe Material design </strong></p>
+      <p>
+        Material design es un lenguaje de diseño creado por Google en 2014 que
+        permite a los equipos desarrollar experiencias de alta calidad par
+        Android, iOS, Flutter y web. Este sistema rapidamente reemplazo a Holo
+        en la actualización de Android Lolipop y este filosofia se aplico de
+        igualmanera a todos los productos de google tales como: Google Docs,
+        Sheet, Slides, Search, Caldendar, Gmail, etc. <br />
+        Los componentes de Material estan basados en bloques que poco a poco
+        construiran una interfaz de usuario, esta tiene implementada sistemas de
+        estados para comunicacion tales como: seleccion, activacion, error,
+        presionar, arrastrar, etc.
+      </p>
+    </div>
+  </section>
+  <section id="referencias">
+    <h2>Referencias:</h2>
+    <ul>
+      <li>
+        LíneadeCódigo. (2009). Validar password con JavaScript. Retrieved
+        February 16, 2021, from
+        <a
+          href="http://lineadecodigo.com/javascript/validar-password-con-javascript/"
+          >http://lineadecodigo.com/javascript/validar-password-con-javascript/</a
+        >
+      </li>
+    </ul>
+  </section>
+</main>
+
+<%- include('includes/footer.ejs') -%>
